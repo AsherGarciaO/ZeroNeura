@@ -1,4 +1,4 @@
-from src.zeroneura.core.Perceptron import Perceptron
+from zeroneura.core.Perceptron import Perceptron
 import unittest
 
 class TestMLP(unittest.TestCase):

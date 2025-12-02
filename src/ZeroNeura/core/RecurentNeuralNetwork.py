@@ -1,4 +1,4 @@
-import src.zeroneura.utils.ActivationFunctions as af
+import zeroneura.utils.ActivationFunctions as af
 import random
 
 class RNNAFDebug:

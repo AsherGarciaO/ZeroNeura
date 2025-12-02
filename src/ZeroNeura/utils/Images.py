@@ -1,5 +1,5 @@
-import src.zeroneura.utils.Tensors as ts
-import src.zeroneura.utils.DataProcessing as dp
+import zeroneura.utils.Tensors as ts
+import zeroneura.utils.DataProcessing as dp
 import cv2, numpy as np
 
 def resize(inputPath, newSize, outputPath):

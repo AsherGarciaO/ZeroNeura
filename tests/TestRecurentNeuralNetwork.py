@@ -1,5 +1,5 @@
-from src.zeroneura.core.RecurentNeuralNetwork import RNNAFDebug as RNN
-import src.zeroneura.utils.WordsProcessing as dp
+from zeroneura.core.RecurentNeuralNetwork import RNNAFDebug as RNN
+import zeroneura.utils.WordsProcessing as dp
 import unittest
 
 class TestMLP(unittest.TestCase):

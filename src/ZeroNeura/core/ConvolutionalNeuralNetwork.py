@@ -1,10 +1,10 @@
-import src.zeroneura.utils.Tensors as ts
-import src.zeroneura.utils.DataProcessing as dp
-import src.zeroneura.utils.ActivationFunctions as af
-import src.zeroneura.utils.Images as im
-import src.zeroneura.utils.Outputs as ot
-import src.zeroneura.utils.Files as f
-from src.zeroneura.core.MultiLayerPerceptron import MLPAFDebug as MLP
+import zeroneura.utils.Tensors as ts
+import zeroneura.utils.DataProcessing as dp
+import zeroneura.utils.ActivationFunctions as af
+import zeroneura.utils.Images as im
+import zeroneura.utils.Outputs as ot
+import zeroneura.utils.Files as f
+from zeroneura.core.MultiLayerPerceptron import MLPAFDebug as MLP
 import numpy as np, cv2
 
 class CNN:

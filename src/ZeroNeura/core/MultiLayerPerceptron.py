@@ -1,6 +1,6 @@
-import src.zeroneura.utils.ActivationFunctions as af
-import src.zeroneura.utils.Outputs as ot
-import src.zeroneura.utils.Files as f
+import zeroneura.utils.ActivationFunctions as af
+import zeroneura.utils.Outputs as ot
+import zeroneura.utils.Files as f
 import random
 
 class MLP:
