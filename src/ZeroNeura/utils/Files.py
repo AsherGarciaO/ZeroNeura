@@ -6,7 +6,7 @@ def getMLPDATA():
 def getCNNDATA(): 
     return {"Kernels": None, "LayersCount": None, "Structure": None, "LearningRate": None, "ActivationFunction": None, "Weights": None, "Biases": None}
 
-def loadMLPDataNND(inputName = 'NeuralNetworkData', inputPath = './'):
+def loadMLPDataNND(inputName = 'ZeroNeuralNetworkData', inputPath = './'):
     DATA = getMLPDATA()
 
     with open(f"{inputPath}{inputName}.nnd", "r", encoding="utf-8") as file:
@@ -33,7 +33,7 @@ def loadMLPDataNND(inputName = 'NeuralNetworkData', inputPath = './'):
 
     return DATA
 
-def saveMLPDataNND(MLPDATA, outputName = 'NeuralNetworkData', outputPath = './'):
+def saveMLPDataNND(MLPDATA, outputName = 'ZeroNeuralNetworkData', outputPath = './'):
     with open(f"{outputPath}{outputName}.nnd", "w") as file:
         file.write("LayersCount: "+str(MLPDATA["LayersCount"])+"\n")
         file.write("Structure: "+str(MLPDATA["Structure"])+"\n")
@@ -44,7 +44,7 @@ def saveMLPDataNND(MLPDATA, outputName = 'NeuralNetworkData', outputPath = './')
         
     return True
 
-def loadCNNDataNND(inputName = 'NeuralNetworkData', inputPath = './'):
+def loadCNNDataNND(inputName = 'ZeroNeuralNetworkData', inputPath = './'):
     DATA = getCNNDATA()
 
     with open(f"{inputPath}{inputName}.nnd", "r", encoding="utf-8") as file:
@@ -74,7 +74,7 @@ def loadCNNDataNND(inputName = 'NeuralNetworkData', inputPath = './'):
 
     return DATA
 
-def saveCNNDataNND(CNNDATA, outputName = 'NeuralNetworkData', outputPath = './'):
+def saveCNNDataNND(CNNDATA, outputName = 'ZeroNeuralNetworkData', outputPath = './'):
     with open(f"{outputPath}{outputName}.nnd", "w") as file:
         file.write("LayersCount: "+str(CNNDATA["LayersCount"])+"\n")
         file.write("Structure: "+str(CNNDATA["Structure"])+"\n")

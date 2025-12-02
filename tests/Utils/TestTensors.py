@@ -1,4 +1,4 @@
-import src.neura.utils.Tensors as ts
+import src.ZeroNeura.utils.Tensors as ts
 import unittest
 
 class TestMLP(unittest.TestCase):

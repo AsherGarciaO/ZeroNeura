@@ -1,5 +1,4 @@
-import src.neura.utils.Tensors as ts
-import src.neura.utils.ActivationFunctions as af
+import src.ZeroNeura.utils.Tensors as ts
 import cv2
 
 def maxPooling(tensor, size = 2, stride = 2):

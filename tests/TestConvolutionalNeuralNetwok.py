@@ -1,5 +1,5 @@
-from src.neura.core.ConvolutionalNeuralNetwork import CNNDebug as CNN
-import src.neura.utils.DataProcessing as dp
+from src.ZeroNeura.core.ConvolutionalNeuralNetwork import CNNDebug as CNN
+import src.ZeroNeura.utils.DataProcessing as dp
 import unittest
 
 kernel1 = [

@@ -1,5 +1,5 @@
-import src.neura.core.MultiLayerPerceptron as mlp
-import src.neura.utils.ActivationFunctions as af
+import src.ZeroNeura.core.MultiLayerPerceptron as mlp
+import src.ZeroNeura.utils.ActivationFunctions as af
 import unittest
 
 inputs = [
