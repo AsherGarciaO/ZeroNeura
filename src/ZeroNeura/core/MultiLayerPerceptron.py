@@ -1,11 +1,11 @@
-import src.ZeroNeura.utils.ActivationFunctions as af
-import src.ZeroNeura.utils.Outputs as ot
-import src.ZeroNeura.utils.Files as f
+import src.zeroneura.utils.ActivationFunctions as af
+import src.zeroneura.utils.Outputs as ot
+import src.zeroneura.utils.Files as f
 import random
 
 class MLP:
     def __init__(self, structure, learningRate):
-        assert isinstance(structure, list) and len(structure) >= 3, "You must provide a 3 item list in the ZeroNeural network structure"
+        assert isinstance(structure, list) and len(structure) >= 3, "You must provide a 3 item list in the zeroneural network structure"
 
         self.structure = structure
         self.learningRate = learningRate
@@ -101,7 +101,7 @@ class MLP:
 
 class MLPAF:
     def __init__(self, structure, learningRate, activationFunction = af.SIGMOID):
-        assert isinstance(structure, list) and len(structure) >= 3, "You must provide a 3 item list in the ZeroNeural network structure"
+        assert isinstance(structure, list) and len(structure) >= 3, "You must provide a 3 item list in the zeroneural network structure"
 
         self.structure = structure
         self.learningRate = learningRate
@@ -202,7 +202,7 @@ class MLPAF:
     
 class MLPAFDebug:
     def __init__(self, structure, learningRate, activationFunction = af.SIGMOID):
-        assert isinstance(structure, list) and len(structure) >= 3, "You must provide a 3 item list in the ZeroNeural network structure"
+        assert isinstance(structure, list) and len(structure) >= 3, "You must provide a 3 item list in the zeroneural network structure"
 
         self.structure = structure
         self.learningRate = learningRate
@@ -275,7 +275,7 @@ class MLPAFDebug:
         print(f"\nWeights:\n{self.weights}")
         print(f"\nBiases:\n{self.biases}")
 
-    def saveData(self, outputName = 'ZeroNeuralNetworkData', outputPath = './'):
+    def saveData(self, outputName = 'zeroneuralNetworkData', outputPath = './'):
         DATA = f.getMLPDATA()
         DATA["LayersCount"] = self.layersCount
         DATA["Structure"] = self.structure
@@ -286,7 +286,7 @@ class MLPAFDebug:
         
         return f.saveMLPDataNND(DATA, outputName, outputPath)
     
-    def loadData(self, inputName = 'ZeroNeuralNetworkData', inputPath = './'):
+    def loadData(self, inputName = 'zeroneuralNetworkData', inputPath = './'):
         DATA = f.loadMLPDataNND(inputName, inputPath)
 
         self.layersCount = DATA["LayersCount"]

@@ -1,10 +1,10 @@
-from src.ZeroNeura.core.RecurentZeroNeuralNetwork import RNNAFDebug as RNN
-import src.ZeroNeura.utils.WordsProcessing as dp
+from src.zeroneura.core.RecurentNeuralNetwork import RNNAFDebug as RNN
+import src.zeroneura.utils.WordsProcessing as dp
 import unittest
 
 class TestMLP(unittest.TestCase):
     def testRNN(self):
-        print(f"\n{'-'*40}Prueba Unitaria Para RecurentZeroNeuralNetwork{'-'*40}\n")
+        print(f"\n{'-'*40}Prueba Unitaria Para RecurentzeroneuralNetwork{'-'*40}\n")
 
         text = "hello world my name is Asher me la turbo mastuba super cabron piruje. hello world my name is Asher las ballenbas this van en el mar no en mini falda. hello world my name is Asher ollaaaaa. hello world my name is Asher coño this."
 

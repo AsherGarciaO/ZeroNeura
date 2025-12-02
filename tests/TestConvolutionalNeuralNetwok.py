@@ -1,5 +1,5 @@
-from src.ZeroNeura.core.ConvolutionalNeuralNetwork import CNNDebug as CNN
-import src.ZeroNeura.utils.DataProcessing as dp
+from src.zeroneura.core.ConvolutionalNeuralNetwork import CNNDebug as CNN
+import src.zeroneura.utils.DataProcessing as dp
 import unittest
 
 kernel1 = [
@@ -79,7 +79,7 @@ class TestCNN(unittest.TestCase):
         print("\n=== ENTRENANDO CNN ===\n")
         cnn = CNN([kernels], 5, 1)
         cnn.setMLPStructure([100, 64, 32, 1], learningRate=0.1)
-        cnn.train(frutasI, frutasO, 500, True, inputPath)
+        cnn.train(frutasI, frutasO, 200, True, inputPath)
 
         print("\n=== GUARDANDO DATOS ===\n")
         cnn.saveData(inputName, inputPath)

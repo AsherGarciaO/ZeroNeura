@@ -1,10 +1,10 @@
-import src.ZeroNeura.utils.Tensors as ts
-import src.ZeroNeura.utils.DataProcessing as dp
-import src.ZeroNeura.utils.ActivationFunctions as af
-import src.ZeroNeura.utils.Images as im
-import src.ZeroNeura.utils.Outputs as ot
-import src.ZeroNeura.utils.Files as f
-from src.ZeroNeura.core.MultiLayerPerceptron import MLPAFDebug as MLP
+import src.zeroneura.utils.Tensors as ts
+import src.zeroneura.utils.DataProcessing as dp
+import src.zeroneura.utils.ActivationFunctions as af
+import src.zeroneura.utils.Images as im
+import src.zeroneura.utils.Outputs as ot
+import src.zeroneura.utils.Files as f
+from src.zeroneura.core.MultiLayerPerceptron import MLPAFDebug as MLP
 import numpy as np, cv2
 
 class CNN:
@@ -217,7 +217,7 @@ class CNNDebug:
             return vec
 
     
-    def saveData(self, outputName = 'ZeroNeuralNetworkData', outputPath = './'):
+    def saveData(self, outputName = 'zeroneuralNetworkData', outputPath = './'):
         DATA = f.getCNNDATA()
         DATA["Kernels"] = self.kernels
         DATA["LayersCount"] = self.mlp.layersCount
@@ -229,7 +229,7 @@ class CNNDebug:
         
         return f.saveCNNDataNND(DATA, outputName, outputPath)
 
-    def loadData(self, inputName = 'ZeroNeuralNetworkData', inputPath = './'):
+    def loadData(self, inputName = 'zeroneuralNetworkData', inputPath = './'):
         DATA = f.loadCNNDataNND(inputName, inputPath)
 
         self.kernels = DATA["Kernels"]

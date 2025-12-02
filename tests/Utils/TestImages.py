@@ -1,4 +1,4 @@
-import src.ZeroNeura.utils.Images as im
+import src.zeroneura.utils.Images as im
 import unittest
 
 class TestMLP(unittest.TestCase):

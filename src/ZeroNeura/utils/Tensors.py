@@ -1,4 +1,4 @@
-import src.ZeroNeura.utils.ActivationFunctions as af
+import src.zeroneura.utils.ActivationFunctions as af
 import random
 
 def createTensor(structure, min = 0, max = 1, function = lambda x: x):    
